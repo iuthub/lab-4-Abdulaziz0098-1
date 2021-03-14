@@ -33,7 +33,7 @@ li {
 	font-family: Verdana;
 }
 
-#listarea {
+#listArea {
 	background-color: #DDEEFF;
 	border: 5px double blue;
 	padding: 0;
@@ -45,7 +45,7 @@ li {
 	list-style-image: url(http://www.cs.washington.edu/education/courses/cse190m/09sp/labs/3-music/mp3icon.gif);
 }
 
-.playlistitem {
+.playlistItem {
 	list-style-image: url(http://www.cs.washington.edu/education/courses/cse190m/09sp/labs/3-music/playlisticon.gif);
 }
 
