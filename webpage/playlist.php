@@ -11,7 +11,7 @@
     <ul id="musicList">
         <?php
         $data = $_GET["data"];
-        $course = fopen($data, "r") or die("Unable to open file!");
+        $course = fopen($data, "music") or die("Could not to open this file!");
 
         while(!feof($course)) {
             $music = fgets($course);

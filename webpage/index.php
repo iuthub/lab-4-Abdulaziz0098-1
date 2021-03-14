@@ -10,7 +10,7 @@
 <div id="listArea">
     <ul id="musicList">
         <?php
-        $musicSizeExt = "b";
+        $musicSizeExt = "byte";
         $musicFiles = glob("songs/*.mp3");
         foreach ($musicFiles as $music) {
             $musicName = basename($music);
@@ -25,8 +25,11 @@
                 $musicSizeExt = "mb";
             }
             ?>
-            <li class="mp3item"> <a href="<?= $music ?>"><?= $musicName ?> </a> <?= " (".(int)$musicSize ." ". $musicSizeExt." )" ?> </li>
-        <?php } ?>
+
+            <li class="mp3item">
+                <a href="<?= $music ?>"><?= $musicName ?> </a>
+                <?= " (".(int)$musicSize ." ". $musicSizeExt." )" ?> </li>
+            <?php } ?>
 
 
         <?php
@@ -34,7 +37,9 @@
         foreach ($playlists as $playlist) {
             $playlistName = basename($playlist);
             ?>
-            <li class="playListItem"> <a href="./playlist.php?data=<?php echo $playlist ?>"><?= $playlistName ?> </a> </li>
+            <li class="playListItem">
+                <a href="./playlist.php?data=<?php echo $playlist ?>"><?= $playlistName ?> </a>
+            </li>
         <?php } ?>
     </ul>
 </div>
